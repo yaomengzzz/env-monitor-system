@@ -53,21 +53,21 @@ python data/generate_data.py
 
 数据分布图：distribution.png
 
-项目结构
-复制
-env-monitor-system/
-├── data/                  # 数据文件
-│   ├── sensor_data.csv    # 示例数据
-│   └── generate_data.py   # 数据生成脚本
-├── src/                   # 源代码
-│   ├── data_loader.py     # 数据加载模块
-│   ├── data_analysis.py   # 数据分析模块
-│   ├── visualization.py   # 可视化模块
-│   └── main.py            # 主程序
-├── docs/                  # 文档与报告
-│   ├── report.md          # 分析报告模板
-│   └── timeseries.png     # 示例图表
-├── tests/                 # 单元测试
-├── requirements.txt       # Python依赖
-├── LICENSE                # 许可证
-└── README.md              # 项目说明
+## 项目结构
+
+- **`env-monitor-system/`** - 项目根目录
+  - **`data/`** - 存放所有数据文件
+    - `sensor_data.csv` - 主数据集，包含温度、湿度、PM2.5等传感器读数。
+    - `generate_data.py` - 用于生成模拟数据的Python脚本。
+  - **`src/`** - 存放项目所有源代码
+    - `data_loader.py` - 负责数据读取和预处理的模块。
+    - `data_analysis.py` - 核心数据分析与统计模块。
+    - `visualization.py` - 生成图表和可视化结果的模块。
+    - `main.py` - 程序主入口，协调各模块工作。
+  - **`docs/`** - 项目文档和分析报告
+    - `report.md` - 数据分析报告模板（Markdown格式）。
+    - `timeseries.png` - 由程序生成的示例时间序列图。
+  - **`tests/`** - 存放单元测试脚本。
+  - `requirements.txt` - 列出运行本项目所需的所有Python库。
+  - `LICENSE` - 本项目采用的开源许可证（如MIT）。
+  - `README.md` - 您正在阅读的项目总览文档。
